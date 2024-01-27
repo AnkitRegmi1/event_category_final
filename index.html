@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Create Responsive Multiple Card Slider Using HTML CSS & Javascript</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+</head>
+<body>
+
+	   
+    
+	<div class="about-col-2">
+		<h2 class="sub-title">Category</h2>
+		<div class="category-container">
+			<div class="tab-titles">
+				<p class="tab-links active-link" onClick="opentab('Beginner')">Beginner</p>
+				<p class="tab-links" onClick="opentab('Developer')"> Developer</p>
+				<p class="tab-links" onClick="opentab('Business')"> Business</p>
+			</div>
+		
+			<div class="tab-contents active-tab" id="Beginner">
+				<ul>
+					<li>Strictly for high schoolers who are junior and seniors, and freshman college students</li>
+					<li>High Schoolers can form a team with the freshman college students if they want.</li>
+					<li>Will be required to submit a working program based on the theme.</li>
+					<li>Use of Online Resources is allowed but are required to present a separate document for the citations and references. Inline comments must be used to show the portion of code used or learned from these sources.</li>
+					<li>Cannot participate in both Beginners and Developers Category but can participate in Business Category</li>
+					<li>Projects must strictly align with the theme.</li>
+				</ul>
+			</div>
+		
+	
+		<div class="tab-contents" id="Developer">
+			<ul>
+				<li>Cannot participate in both Beginners and Developers Category.</li>
+				<li>Will be required to submit a working program based on the theme.</li>
+				<li>Use of Online Resources is allowed but are required to present a separate document for the citations and references.</li>
+			</ul>
+		</div>
+	
+		<div class="tab-contents" id="Business">
+			<ul>
+				<li>Can participate in both Beginners and Business or Developers and Business Category</li>
+				<li>Students who are interested in this category need not have any coding experience.</li>
+				<li>Will be required to present a 2 – 5 minute-long presentation. Finalists of the Business Category must give their presentation in person.</li>
+				<li>Projects must strictly align with the theme</li>
+				<li>Finalists of the Business Category must give their presentation in person</li>
+			</ul>
+		</div>
+	</div>  
+
+	</div>
+    
+
+	
+	<!-- Slider section -->
+	<section class="slider" >
+		<div class="container" >
+		
+			  <div class="slider" data-slider>
+			  
+			<div class="slider-title">
+				<div>
+					<p class="title">Prizes</p>
+					<p class="main_title">All Categories</p>
+				</div>
+							  
+				<div class="slider__buttons">
+				  <button class="slider__button" data-slider-prev disabled>
+					<i class="fa fa-angle-left"></i>
+				  </button>
+				  <button class="slider__button" data-slider-next>
+					<i class="fa fa-angle-right"></i>
+				  </button>
+				</div>
+			</div>
+			  
+				<ul class="slider__track" data-slider-track>
+				  <li>
+					<div class="slide">
+						<img src="img/laptop.jpeg" class="slideimg" />
+						<div class="slide_content">
+							<p>Beginner 1st </p>
+						</div>
+					</div>
+				  </li>
+				  <li>
+					<div class="slide">
+						<img src="img/TV.webp" class="slideimg" />
+						<div class="slide_content">
+							<p>Beginner 2nd</p>
+						</div>
+					</div>
+				  </li>
+				  <li>
+					<div class="slide">
+						<img src="img/speaker.webp" class="slideimg" />
+						<div class="slide_content">
+							<p>Beginner 3rd</p>
+						</div>
+				  </li>
+				  <li>
+					<div class="slide">
+						<img src="img/laptop.jpeg" class="slideimg" />
+						<div class="slide_content">
+							<p>Advanced 1st</p>
+						</div>
+					</div>
+				  </li>
+				  <li>
+					<div class="slide">
+						<img src="img/TV.webp" class="slideimg" />
+						<div class="slide_content">
+							<p>Advanced 2nd</p>
+						</div>
+					</div>
+				  </li>
+				  <li>
+					<div class="slide">
+						<img src="img/speaker.webp" class="slideimg" />
+						<div class="slide_content">
+							<p>Advanced 3rd</p>
+						</div>
+					</div>
+				  </li>
+				  <li>
+					<div class="slide">
+						<img src="img/laptop.jpeg" class="slideimg" />
+						<div class="slide_content">
+							<p>Business 1st</p>
+						</div>
+				  </li>
+				  <li>
+					<div class="slide">
+						<img src="img/TV.webp" class="slideimg" />
+						<img src="" class="slideimg" />
+						<div class="slide_content">
+							<p>Business 2nd</p>
+						</div>
+					</div>
+				  </li>
+				  <li>
+					<div class="slide">
+						<img src="img/speaker.webp" class="slideimg" />
+						<div class="slide_content">
+							<p>Business 3rd</p>
+						</div>
+					</div>
+				  </li>
+				
+				
+				
+				
+			  </div>
+		</div>
+	</section>
+	<!-- Slider section End -->
+	
+<script src="script.js"></script>
+	
+</body>
+</html>
